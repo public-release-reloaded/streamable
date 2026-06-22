@@ -3,5 +3,6 @@
  (public_name streamable)
  (libraries async_kernel async_rpc_kernel bin_prot.shape core
    core_kernel.total_map)
+ (flags (:standard -w -67))
  (preprocess
   (pps ppx_jane)))
