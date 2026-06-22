@@ -122,7 +122,7 @@ let to_streamable_fun ~loc ~constructor_declarations =
           in
           case ~lhs:lhs_pattern ~guard:None ~rhs:rhs_expression)
     in
-    pexp_function ~loc cases
+    pexp_function_cases ~loc cases
 ;;
 
 let of_streamable_fun ~loc ~constructor_declarations =
@@ -193,7 +193,7 @@ let of_streamable_fun ~loc ~constructor_declarations =
           in
           case ~lhs:lhs_pattern ~guard:None ~rhs:rhs_expression)
     in
-    pexp_function ~loc cases
+    pexp_function_cases ~loc cases
 ;;
 
 let maybe_match type_ (_ : Ctx.t) =
